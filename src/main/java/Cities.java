@@ -30,6 +30,7 @@ public class Cities {
             int sunrise = (Integer) sys.get("sunrise");
             int sunset = (Integer) sys.get("sunset");
             daylite = sunset - sunrise;
+// Consider theoretical probability of having several cities with minimal or maximal daylight time
             if (daylite > currentMax) {
                 maxdaylight.clear();
             }
